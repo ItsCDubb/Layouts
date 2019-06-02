@@ -1,18 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<!--
+
+Title
+Banner Image
+Status
+Network       (Label)
+First Aired   (Label)
+Rating        (Label)
+Genres
+Seasons
+    Episodes
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Bleach"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bleach_poster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_status"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:padding="5dp"
+            android:text="Ended"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:padding="5dp"
+            android:text="TV Tokyo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:textSize="19sp"
+                android:padding="5dp"
+                android:text="Rating:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:text="TV-MA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="textStart"
+                android:textSize="19sp"
+                android:padding="5dp"
+                android:text="First Aired:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:text="10-05-2004"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Seasons"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Specials:"
+        android:textSize="17sp"
+        android:textAlignment="textStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+           <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Jump Festa 2004 Anime + Gotei 13 Omake"
+                        android:paddingBottom="15dp"
+                        android:textSize="16sp"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Memories in the Rain"
+                        android:paddingBottom="15dp"
+                        android:textSize="16sp"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="The Sealed Sword Frenzy"
+                        android:paddingBottom="15dp"
+                        android:textSize="16sp"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Memories of Nobody"
+                        android:paddingBottom="15dp"
+                        android:textSize="16sp"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="The Diamond Dust Rebellion"
+                        android:paddingBottom="15dp"
+                        android:textSize="17sp"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Fade to Black"
+                        android:paddingBottom="15dp"
+                        android:textSize="16sp"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Bleach: Hell Chapter"
+                        android:paddingBottom="15dp"
+                        android:textSize="16sp"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
