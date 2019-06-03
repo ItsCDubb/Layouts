@@ -11,6 +11,7 @@ Rating        (Label)
 Genres
 Seasons
     Episodes
+
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -32,7 +33,7 @@ Seasons
     <ImageView
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:src="@drawable/bleach_poster"
+        android:src="@drawable/bleach_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -107,7 +108,7 @@ Seasons
                 android:textAlignment="textStart"
                 android:textSize="18sp"
                 android:padding="5dp"
-                android:text="10-05-2004"
+                android:text="2004"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -130,87 +131,87 @@ Seasons
         android:layout_height="wrap_content" />
 
     <LinearLayout
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="0dp">
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
 
-           <ScrollView
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <LinearLayout
-                    android:orientation="vertical"
+                <TextView
+                    android:text="Jump Festa 2004 Anime + Gotei 13 Omake"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:text="Jump Festa 2004 Anime + Gotei 13 Omake"
-                        android:paddingBottom="15dp"
-                        android:textSize="16sp"
-                        android:textAlignment="textStart"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Memories in the Rain"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:text="Memories in the Rain"
-                        android:paddingBottom="15dp"
-                        android:textSize="16sp"
-                        android:textAlignment="textStart"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                <TextView
+                    android:text="The Sealed Sword Frenzy"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:text="The Sealed Sword Frenzy"
-                        android:paddingBottom="15dp"
-                        android:textSize="16sp"
-                        android:textAlignment="textStart"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Memories of Nobody"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:text="Memories of Nobody"
-                        android:paddingBottom="15dp"
-                        android:textSize="16sp"
-                        android:textAlignment="textStart"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                <TextView
+                    android:text="The Diamond Dust Rebellion"
+                    android:paddingBottom="15dp"
+                    android:textSize="17sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:text="The Diamond Dust Rebellion"
-                        android:paddingBottom="15dp"
-                        android:textSize="17sp"
-                        android:textAlignment="textStart"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Fade to Black"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:text="Fade to Black"
-                        android:paddingBottom="15dp"
-                        android:textSize="16sp"
-                        android:textAlignment="textStart"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-
-                    <TextView
-                        android:text="Bleach: Hell Chapter"
-                        android:paddingBottom="15dp"
-                        android:textSize="16sp"
-                        android:textAlignment="textStart"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Bleach: Hell Chapter"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
 
 
-                </LinearLayout>
+            </LinearLayout>
 
-            </ScrollView>
-
-
-        </LinearLayout>
+        </ScrollView>
 
 
     </LinearLayout>
+
+
+</LinearLayout>
 
 
 
