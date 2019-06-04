@@ -236,8 +236,8 @@ Seasons
     </LinearLayout>
 
     <TextView
-        android:textStyle="bold"
         android:text="Season 1:"
+        android:textStyle="bold"
         android:textSize="17sp"
         android:textAlignment="textStart"
         android:layout_width="match_parent"
@@ -521,7 +521,7 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="Assault on Trip at Sacred Ground!"
+                    android:text="Breakthrough! The Death God's Encompassing Net"
                     android:paddingBottom="15dp"
                     android:textSize="16sp"
                     android:textAlignment="textStart"
@@ -529,7 +529,7 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="The Legendary Quincy"
+                    android:text="Renji's Confrontation"
                     android:paddingBottom="15dp"
                     android:textSize="16sp"
                     android:textAlignment="textStart"
@@ -537,7 +537,7 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="A Gentle Right Arm"
+                    android:text="The Resolution to Kill"
                     android:paddingBottom="15dp"
                     android:textSize="16sp"
                     android:textAlignment="textStart"
@@ -545,7 +545,7 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="Flower and Hollow"
+                    android:text="Stars and the Stray"
                     android:paddingBottom="15dp"
                     android:textSize="16sp"
                     android:textAlignment="textStart"
@@ -553,7 +553,7 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="Back to Back, a Fight to the Death!"
+                    android:text="Miracle! The Mysterious New Hero"
                     android:paddingBottom="15dp"
                     android:textSize="16sp"
                     android:textAlignment="textStart"
@@ -561,7 +561,7 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="Kon's Great Plan"
+                    android:text="Tragedy of Dawn"
                     android:paddingBottom="15dp"
                     android:textSize="16sp"
                     android:textAlignment="textStart"
@@ -569,7 +569,7 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="The Encounter, Renji Abarai!"
+                    android:text="Assassination of Aizen! The Darkness Which Approaches	"
                     android:paddingBottom="15dp"
                     android:textSize="16sp"
                     android:textAlignment="textStart"
@@ -577,7 +577,7 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="Ichigo Dies!"
+                    android:text="Kenpachi Zaraki Approaches!"
                     android:paddingBottom="15dp"
                     android:textSize="16sp"
                     android:textAlignment="textStart"
@@ -585,7 +585,7 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="	Reclaim! The Power of the Shinigami"
+                    android:text="Reason of the Fist"
                     android:paddingBottom="15dp"
                     android:textSize="16sp"
                     android:textAlignment="textStart"
@@ -593,7 +593,7 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="Ichigo Becomes a Hollow!"
+                    android:text="Desperation! The Broken Zangetsu"
                     android:paddingBottom="15dp"
                     android:textSize="16sp"
                     android:textAlignment="textStart"
@@ -601,7 +601,23 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="Ichimaru Gin's Shadow"
+                    android:text="The Man of Immortality"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="The Shinigami Whom Ganju Met"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Reunion, Ichigo and Rukia"
                     android:paddingBottom="15dp"
                     android:textSize="16sp"
                     android:textAlignment="textStart"
