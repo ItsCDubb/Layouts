@@ -4,7 +4,7 @@
 
 Title
 Banner Image
-Status
+Status        (Label)
 Network       (Label)
 First Aired   (Label)
 Rating        (Label)
@@ -41,21 +41,44 @@ Seasons
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
+        <!-- <TextView
             android:id="@+id/text_status"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:textSize="21sp"
+            android:padding="2dp"
+            android:text="Status:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" /> -->
+
+        <TextView
+            android:id="@+id/text_status_current"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:textAlignment="center"
             android:textSize="22sp"
-            android:padding="5dp"
+            android:padding="2dp"
             android:text="Ended"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
 
+        <!-- <TextView
+            android:id="@+id/text_network"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:textSize="21sp"
+            android:padding="2dp"
+            android:text="Network:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" /> -->
+
         <TextView
+            android:id="@+id/text_network_current"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:textAlignment="center"
             android:textSize="22sp"
-            android:padding="5dp"
+            android:padding="2dp"
             android:text="TV Tokyo"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -72,7 +95,7 @@ Seasons
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_weight="1"
+                android:textStyle="bold"
                 android:textAlignment="textStart"
                 android:textSize="19sp"
                 android:padding="5dp"
@@ -81,13 +104,15 @@ Seasons
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:layout_weight="1"
                 android:textAlignment="textStart"
-                android:textSize="18sp"
+                android:textStyle="italic"
+                android:textSize="16sp"
                 android:padding="5dp"
                 android:text="TV-MA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+
+
 
         </LinearLayout>
 
@@ -97,8 +122,9 @@ Seasons
             android:layout_height="wrap_content">
 
             <TextView
+                android:textStyle="bold"
                 android:textAlignment="textStart"
-                android:textSize="19sp"
+                android:textSize="18sp"
                 android:padding="5dp"
                 android:text="First Aired:"
                 android:layout_width="wrap_content"
@@ -106,9 +132,10 @@ Seasons
 
             <TextView
                 android:textAlignment="textStart"
-                android:textSize="18sp"
+                android:textStyle="italic"
+                android:textSize="16sp"
                 android:padding="5dp"
-                android:text="2004"
+                android:text="2004-10-05"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -124,6 +151,7 @@ Seasons
         android:layout_height="wrap_content" />
 
     <TextView
+        android:textStyle="bold"
         android:text="Specials:"
         android:textSize="17sp"
         android:textAlignment="textStart"
@@ -186,12 +214,12 @@ Seasons
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="Fade to Black"
-                    android:paddingBottom="15dp"
-                    android:textSize="16sp"
-                    android:textAlignment="textStart"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:text="Fade to Black"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:text="Bleach: Hell Chapter"
@@ -201,20 +229,95 @@ Seasons
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
+            </LinearLayout>
 
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:text="Season 1:"
+        android:textSize="17sp"
+        android:textAlignment="textStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Jump Festa 2004 Anime + Gotei 13 Omake"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Memories in the Rain"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="The Sealed Sword Frenzy"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Memories of Nobody"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="The Diamond Dust Rebellion"
+                    android:paddingBottom="15dp"
+                    android:textSize="17sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:text="Fade to Black"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:text="Bleach: Hell Chapter"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
         </ScrollView>
 
-
     </LinearLayout>
 
-
 </LinearLayout>
-
-
-
-
-
-
