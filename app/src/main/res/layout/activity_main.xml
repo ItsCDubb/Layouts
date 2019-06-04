@@ -630,5 +630,210 @@ Seasons
 
     </LinearLayout>
 
+    <TextView
+        android:textStyle="bold"
+        android:text="Season 3:"
+        android:textSize="17sp"
+        android:textAlignment="textStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Yoruichi, Master of Speed, Dances!"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="The Despicable Shinigami"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Ishida, Limits of Power!"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Overcome the Limits!"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Authentic Records! School of Shinigami"
+                    android:paddingBottom="15dp"
+                    android:textSize="17sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="The Avengers"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Hitsugaya Roars!"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Rukia's Nightmare"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="The Awakening Lion"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Morning of the Sentence"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Renji, Oath of the Soul! Death Match with Byakuya"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Ichimaru Gin's Temptation, Resolution of Destruction"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="An Accomplished Oath! Get Back Rukia!"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="The Strongest Shinigami! Ultimate Confrontation Between Teacher and Student"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Supersonic Battle! Determine the Goddess of Chivalry"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="One Thousand Cherry Blossoms, Crushed! Zangetsu Thrusts Through the Sky"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Unseal! The Black Blade, the Miraculous Power"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Conclusion of the Death Match! White Pride and Black Desire"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Truth of Despair, the Dagger That Has Been Brandished"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Aizen Stands Out! His Terrifying Ambition"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Congress Together! The Strongest Shinigami Organization"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Rukia's Resolution, Ichigo's Feelings"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
 
 </LinearLayout>
