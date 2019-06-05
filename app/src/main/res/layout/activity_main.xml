@@ -1,157 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!--
-
-Title
-Banner Image
-Status        (Label)
-Network       (Label)
-First Aired   (Label)
-Rating        (Label)
-
-Seasons
-    Episodes
-Genres
--->
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
-        android:text="Bleach"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        android:textAlignment="center"
+        android:id="@+id/tv_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Bleach"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
     <ImageView
-        android:scaleType="fitCenter"
+        android:id="@+id/iv_icon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         android:adjustViewBounds="true"
         android:src="@drawable/bleach_header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <!-- <TextView
-            android:id="@+id/text_status"
-            android:layout_weight="1"
-            android:textAlignment="textStart"
-            android:textSize="21sp"
-            android:padding="2dp"
-            android:text="Status:"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" /> -->
-
-        <TextView
-            android:id="@+id/text_status_current"
-            android:textStyle="bold"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:textSize="22sp"
-            android:padding="2dp"
-            android:text="Ended"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-
-        <!-- <TextView
-            android:id="@+id/text_network"
-            android:layout_weight="1"
-            android:textAlignment="textStart"
-            android:textSize="21sp"
-            android:padding="2dp"
-            android:text="Network:"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" /> -->
-
-        <TextView
-            android:id="@+id/text_network_current"
-            android:textStyle="bold"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:textSize="22sp"
-            android:padding="2dp"
-            android:text="TV Tokyo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:textStyle="bold"
-                android:textAlignment="textStart"
-                android:textSize="19sp"
-                android:padding="5dp"
-                android:text="Rating:"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:textAlignment="textStart"
-                android:textStyle="italic"
-                android:textSize="16sp"
-                android:padding="5dp"
-                android:text="TV-MA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:textStyle="bold"
-                android:textAlignment="textStart"
-                android:textSize="18sp"
-                android:padding="5dp"
-                android:text="First Aired:"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:textAlignment="textStart"
-                android:textStyle="italic"
-                android:textSize="16sp"
-                android:padding="5dp"
-                android:text="2004-10-05"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".3" />
 
     <TextView
-        android:text="Seasons"
-        android:textSize="24sp"
+        android:id="@+id/text_status_current"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:text="Ended"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_network_current"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon"
         android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_network_current"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="2dp"
+        app:layout_constraintLeft_toRightOf="@id/text_status_current"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="TV Tokyo"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_rating_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="5dp"
+        android:text="Rating:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_status_current"
+        android:textAlignment="textStart"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_rating_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="5dp"
+        android:text="TV-MA"
+        app:layout_constraintTop_toBottomOf="@id/text_status_current"
+        app:layout_constraintLeft_toRightOf="@id/tv_rating_prompt"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_first_aired_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/text_network_current"
+        app:layout_constraintRight_toLeftOf="@id/tv_first_aired_content"
+        android:text="First Aired:"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_first_aired_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="5dp"
+        android:text="2004-10-05"
+        app:layout_constraintTop_toBottomOf="@id/text_network_current"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_seasons"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_aired_content"
+        android:text="Seasons"
+        android:textAlignment="center"
+        android:textSize="24sp" />
 
     <ExpandableListView
         android:id="@+id/lvExp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ExpandableListView>
+        app:layout_constraintTop_toBottomOf="@id/tv_seasons"
+        app:layout_constraintBottom_toTopOf="@id/tv_genre_prompt"
+        android:layout_height="0dp"></ExpandableListView>
 
+    <TextView
+        android:id="@+id/tv_genre_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Genres:"
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/tv_genre_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_genre_prompt"
+        android:padding="5dp"
+        android:text="Action, Adventure, Animation, Anime, Comedy, Fantasy"
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+</android.support.constraint.ConstraintLayout>

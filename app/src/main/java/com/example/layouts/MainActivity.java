@@ -1,4 +1,4 @@
-package com.example.expandablelistview;
+package com.example.layouts;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
